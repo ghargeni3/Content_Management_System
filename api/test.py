@@ -125,9 +125,9 @@ class UserTest(APITestCase):
         client.credentials(HTTP_AUTHORIZATION='Bearer ' + token)
         url = reverse('create_content')
 
-        fp = open('D://Zeamo//assignment//role_based_auth//django-rest-role-jwt//api//tst_upload_files//Invoice-D5E30192-0002.pdf','rb')
+        fp = open('D://Zeamo//assignment//role_based_auth//django-rest-role-jwt//api//tst_upload_files//Invoice-A59EEC46-0002.pdf','rb')
         file = InMemoryUploadedFile(
-            fp, 'document', "Invoice-061733D2-0003.pdf", ".pdf",
+            fp, 'document', "Invoice-A59EEC46-0002.pdf", ".pdf",
             0, charset=None)
 
         payload={
