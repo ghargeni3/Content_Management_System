@@ -229,7 +229,6 @@ class ContentSearchView(APIView):
             Q(categories__icontains=key)
         )
         serializer = self.serializer_class(contents, many=True)
-        
         return Response({
                 'success': True,
                 'statusCode': status.HTTP_200_OK,
